@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="images/favicon.png">
+    <link type="text/css" rel="stylesheet" href="./css/home.css" />
+    <title>Home</title>
+  </head>
+  <body>
+    <div class="container">
+      <img
+        class="background home-background"
+        src="./images/home-background1.png"
+        alt="home"
+      />
+      <button class="button play-button"></button>
+      <button class="button credits-button"></button>
+      <button class="button mute-button"></button>
+      <button id="startTimer">DALE A CONTAR</button>
+      <div id="timer">CONTADOR:</div>
+    </div>
+
+    <!-- <button id="startTimer">Iniciar Temporizador</button>
+    <div id="timer">CONTADOR:</div> -->
+  </body>
+  <script src="../scripts/timer.js"></script>
+  <script>
+    
+    const playButton = document.querySelector(".play-button");
+    playButton.addEventListener("click", () => {
+      window.location.href = "level.php";
+    });
+
+    creditsButton = document.querySelector(".credits-button");
+    creditsButton.addEventListener("click", () => {
+      alert("Créditos en construcción");
+    });
+  </script>
+</html>

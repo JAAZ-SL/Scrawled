@@ -1,0 +1,74 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+body {
+  height: 100vh;
+  background-color: #00a2e8;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.background {
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
+.button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.play-button {
+  position: absolute;
+  top: 10%;
+  left: 8%;
+  width: 10%;
+  height: 10%;
+}
+
+.credits-button {
+  position: absolute;
+  bottom: 27%;
+  left: 18%;
+  width: 5.5%;
+  height: 5%;
+  border-radius: 25%;
+  transform: rotate(6deg);
+}
+
+#timer {
+  position: absolute;
+  top: 10%;
+  left: 51%;
+  color: black;
+  padding: 1%;
+}
+
+#startTimer {
+  position: absolute;
+  bottom: 10%;
+  left: 55%;
+  border-radius: 25px;
+  background-color: #00a2e8;
+  color: black;
+  padding: 1%;
+}
